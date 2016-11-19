@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E136A4331DD765E900D3AC80"
+               BlueprintIdentifier = "C66424141DE0A3CE00197D45"
                BuildableName = "MED-CARDS.app"
                BlueprintName = "MED-CARDS"
                ReferencedContainer = "container:MED-CARDS.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E136A44A1DD765EB00D3AC80"
+               BlueprintIdentifier = "C664242B1DE0A3CE00197D45"
                BuildableName = "MED-CARDSTests.xctest"
                BlueprintName = "MED-CARDSTests"
                ReferencedContainer = "container:MED-CARDS.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E136A4551DD765EB00D3AC80"
+               BlueprintIdentifier = "C66424361DE0A3CE00197D45"
                BuildableName = "MED-CARDSUITests.xctest"
                BlueprintName = "MED-CARDSUITests"
                ReferencedContainer = "container:MED-CARDS.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E136A4331DD765E900D3AC80"
+            BlueprintIdentifier = "C66424141DE0A3CE00197D45"
             BuildableName = "MED-CARDS.app"
             BlueprintName = "MED-CARDS"
             ReferencedContainer = "container:MED-CARDS.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E136A4331DD765E900D3AC80"
+            BlueprintIdentifier = "C66424141DE0A3CE00197D45"
             BuildableName = "MED-CARDS.app"
             BlueprintName = "MED-CARDS"
             ReferencedContainer = "container:MED-CARDS.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E136A4331DD765E900D3AC80"
+            BlueprintIdentifier = "C66424141DE0A3CE00197D45"
             BuildableName = "MED-CARDS.app"
             BlueprintName = "MED-CARDS"
             ReferencedContainer = "container:MED-CARDS.xcodeproj">

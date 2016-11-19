@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  MED-CARDS
 //
-//  Created by CptX on 12.11.16.
-//  Copyright © 2016 Dr. Siegbert Stracke. All rights reserved.
+//  Created by SSMD on 19.11.16.
+//  Copyright © 2016 Sanexio. All rights reserved.
 //
 
 import UIKit

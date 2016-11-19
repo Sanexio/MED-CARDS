@@ -7,66 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E136A4381DD765E900D3AC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136A4371DD765E900D3AC80 /* AppDelegate.swift */; };
-		E136A43A1DD765EA00D3AC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136A4391DD765EA00D3AC80 /* ViewController.swift */; };
-		E136A43D1DD765EA00D3AC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E136A43B1DD765EA00D3AC80 /* Main.storyboard */; };
-		E136A4401DD765EA00D3AC80 /* MED_CARDS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E136A43E1DD765EA00D3AC80 /* MED_CARDS.xcdatamodeld */; };
-		E136A4421DD765EA00D3AC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E136A4411DD765EA00D3AC80 /* Assets.xcassets */; };
-		E136A4451DD765EA00D3AC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E136A4431DD765EA00D3AC80 /* LaunchScreen.storyboard */; };
-		E136A4501DD765EB00D3AC80 /* MED_CARDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136A44F1DD765EB00D3AC80 /* MED_CARDSTests.swift */; };
-		E136A45B1DD765EC00D3AC80 /* MED_CARDSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E136A45A1DD765EC00D3AC80 /* MED_CARDSUITests.swift */; };
+		C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66424181DE0A3CE00197D45 /* AppDelegate.swift */; };
+		C664241B1DE0A3CE00197D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664241A1DE0A3CE00197D45 /* ViewController.swift */; };
+		C664241E1DE0A3CE00197D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C664241C1DE0A3CE00197D45 /* Main.storyboard */; };
+		C66424211DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C664241F1DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld */; };
+		C66424231DE0A3CE00197D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66424221DE0A3CE00197D45 /* Assets.xcassets */; };
+		C66424261DE0A3CE00197D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66424241DE0A3CE00197D45 /* LaunchScreen.storyboard */; };
+		C66424311DE0A3CE00197D45 /* MED_CARDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66424301DE0A3CE00197D45 /* MED_CARDSTests.swift */; };
+		C664243C1DE0A3CE00197D45 /* MED_CARDSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664243B1DE0A3CE00197D45 /* MED_CARDSUITests.swift */; };
+		C664244B1DE0A64F00197D45 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244A1DE0A64F00197D45 /* Card.swift */; };
+		C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244C1DE0A6BD00197D45 /* Deck.swift */; };
+		C664244F1DE0A6E800197D45 /* MedcardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244E1DE0A6E800197D45 /* MedcardsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E136A44C1DD765EB00D3AC80 /* PBXContainerItemProxy */ = {
+		C664242D1DE0A3CE00197D45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E136A42C1DD765E900D3AC80 /* Project object */;
+			containerPortal = C664240D1DE0A3CE00197D45 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E136A4331DD765E900D3AC80;
+			remoteGlobalIDString = C66424141DE0A3CE00197D45;
 			remoteInfo = "MED-CARDS";
 		};
-		E136A4571DD765EB00D3AC80 /* PBXContainerItemProxy */ = {
+		C66424381DE0A3CE00197D45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E136A42C1DD765E900D3AC80 /* Project object */;
+			containerPortal = C664240D1DE0A3CE00197D45 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E136A4331DD765E900D3AC80;
+			remoteGlobalIDString = C66424141DE0A3CE00197D45;
 			remoteInfo = "MED-CARDS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E136A4341DD765E900D3AC80 /* MED-CARDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MED-CARDS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E136A4371DD765E900D3AC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E136A4391DD765EA00D3AC80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E136A43C1DD765EA00D3AC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E136A43F1DD765EA00D3AC80 /* MED_CARDS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MED_CARDS.xcdatamodel; sourceTree = "<group>"; };
-		E136A4411DD765EA00D3AC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E136A4441DD765EA00D3AC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E136A4461DD765EB00D3AC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E136A44B1DD765EB00D3AC80 /* MED-CARDSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MED-CARDSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E136A44F1DD765EB00D3AC80 /* MED_CARDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MED_CARDSTests.swift; sourceTree = "<group>"; };
-		E136A4511DD765EB00D3AC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E136A4561DD765EB00D3AC80 /* MED-CARDSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MED-CARDSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E136A45A1DD765EC00D3AC80 /* MED_CARDSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MED_CARDSUITests.swift; sourceTree = "<group>"; };
-		E136A45C1DD765ED00D3AC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66424151DE0A3CE00197D45 /* MED-CARDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MED-CARDS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66424181DE0A3CE00197D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C664241A1DE0A3CE00197D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C664241D1DE0A3CE00197D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C66424201DE0A3CE00197D45 /* MED_CARDS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MED_CARDS.xcdatamodel; sourceTree = "<group>"; };
+		C66424221DE0A3CE00197D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C66424251DE0A3CE00197D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C66424271DE0A3CE00197D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C664242C1DE0A3CE00197D45 /* MED-CARDSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MED-CARDSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66424301DE0A3CE00197D45 /* MED_CARDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MED_CARDSTests.swift; sourceTree = "<group>"; };
+		C66424321DE0A3CE00197D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66424371DE0A3CE00197D45 /* MED-CARDSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MED-CARDSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C664243B1DE0A3CE00197D45 /* MED_CARDSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MED_CARDSUITests.swift; sourceTree = "<group>"; };
+		C664243D1DE0A3CE00197D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C664244A1DE0A64F00197D45 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C664244C1DE0A6BD00197D45 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		C664244E1DE0A6E800197D45 /* MedcardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedcardsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E136A4311DD765E900D3AC80 /* Frameworks */ = {
+		C66424121DE0A3CE00197D45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E136A4481DD765EB00D3AC80 /* Frameworks */ = {
+		C66424291DE0A3CE00197D45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E136A4531DD765EB00D3AC80 /* Frameworks */ = {
+		C66424341DE0A3CE00197D45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,68 +82,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E136A42B1DD765E900D3AC80 = {
+		C664240C1DE0A3CE00197D45 = {
 			isa = PBXGroup;
 			children = (
-				E136A4361DD765E900D3AC80 /* MED-CARDS */,
-				E136A44E1DD765EB00D3AC80 /* MED-CARDSTests */,
-				E136A4591DD765EC00D3AC80 /* MED-CARDSUITests */,
-				E136A4351DD765E900D3AC80 /* Products */,
+				C66424171DE0A3CE00197D45 /* MED-CARDS */,
+				C664242F1DE0A3CE00197D45 /* MED-CARDSTests */,
+				C664243A1DE0A3CE00197D45 /* MED-CARDSUITests */,
+				C66424161DE0A3CE00197D45 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E136A4351DD765E900D3AC80 /* Products */ = {
+		C66424161DE0A3CE00197D45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E136A4341DD765E900D3AC80 /* MED-CARDS.app */,
-				E136A44B1DD765EB00D3AC80 /* MED-CARDSTests.xctest */,
-				E136A4561DD765EB00D3AC80 /* MED-CARDSUITests.xctest */,
+				C66424151DE0A3CE00197D45 /* MED-CARDS.app */,
+				C664242C1DE0A3CE00197D45 /* MED-CARDSTests.xctest */,
+				C66424371DE0A3CE00197D45 /* MED-CARDSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E136A4361DD765E900D3AC80 /* MED-CARDS */ = {
+		C66424171DE0A3CE00197D45 /* MED-CARDS */ = {
 			isa = PBXGroup;
 			children = (
-				E136A4371DD765E900D3AC80 /* AppDelegate.swift */,
-				E136A4391DD765EA00D3AC80 /* ViewController.swift */,
-				E136A43B1DD765EA00D3AC80 /* Main.storyboard */,
-				E136A4411DD765EA00D3AC80 /* Assets.xcassets */,
-				E136A4431DD765EA00D3AC80 /* LaunchScreen.storyboard */,
-				E136A4461DD765EB00D3AC80 /* Info.plist */,
-				E136A43E1DD765EA00D3AC80 /* MED_CARDS.xcdatamodeld */,
+				C66424491DE0A61C00197D45 /* Model */,
+				C66424181DE0A3CE00197D45 /* AppDelegate.swift */,
+				C664241A1DE0A3CE00197D45 /* ViewController.swift */,
+				C664241C1DE0A3CE00197D45 /* Main.storyboard */,
+				C66424221DE0A3CE00197D45 /* Assets.xcassets */,
+				C66424241DE0A3CE00197D45 /* LaunchScreen.storyboard */,
+				C66424271DE0A3CE00197D45 /* Info.plist */,
+				C664241F1DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld */,
 			);
 			path = "MED-CARDS";
 			sourceTree = "<group>";
 		};
-		E136A44E1DD765EB00D3AC80 /* MED-CARDSTests */ = {
+		C664242F1DE0A3CE00197D45 /* MED-CARDSTests */ = {
 			isa = PBXGroup;
 			children = (
-				E136A44F1DD765EB00D3AC80 /* MED_CARDSTests.swift */,
-				E136A4511DD765EB00D3AC80 /* Info.plist */,
+				C66424301DE0A3CE00197D45 /* MED_CARDSTests.swift */,
+				C66424321DE0A3CE00197D45 /* Info.plist */,
 			);
 			path = "MED-CARDSTests";
 			sourceTree = "<group>";
 		};
-		E136A4591DD765EC00D3AC80 /* MED-CARDSUITests */ = {
+		C664243A1DE0A3CE00197D45 /* MED-CARDSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E136A45A1DD765EC00D3AC80 /* MED_CARDSUITests.swift */,
-				E136A45C1DD765ED00D3AC80 /* Info.plist */,
+				C664243B1DE0A3CE00197D45 /* MED_CARDSUITests.swift */,
+				C664243D1DE0A3CE00197D45 /* Info.plist */,
 			);
 			path = "MED-CARDSUITests";
+			sourceTree = "<group>";
+		};
+		C66424491DE0A61C00197D45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C664244A1DE0A64F00197D45 /* Card.swift */,
+				C664244C1DE0A6BD00197D45 /* Deck.swift */,
+				C664244E1DE0A6E800197D45 /* MedcardsModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E136A4331DD765E900D3AC80 /* MED-CARDS */ = {
+		C66424141DE0A3CE00197D45 /* MED-CARDS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E136A45F1DD765ED00D3AC80 /* Build configuration list for PBXNativeTarget "MED-CARDS" */;
+			buildConfigurationList = C66424401DE0A3CE00197D45 /* Build configuration list for PBXNativeTarget "MED-CARDS" */;
 			buildPhases = (
-				E136A4301DD765E900D3AC80 /* Sources */,
-				E136A4311DD765E900D3AC80 /* Frameworks */,
-				E136A4321DD765E900D3AC80 /* Resources */,
+				C66424111DE0A3CE00197D45 /* Sources */,
+				C66424121DE0A3CE00197D45 /* Frameworks */,
+				C66424131DE0A3CE00197D45 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,75 +162,75 @@
 			);
 			name = "MED-CARDS";
 			productName = "MED-CARDS";
-			productReference = E136A4341DD765E900D3AC80 /* MED-CARDS.app */;
+			productReference = C66424151DE0A3CE00197D45 /* MED-CARDS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E136A44A1DD765EB00D3AC80 /* MED-CARDSTests */ = {
+		C664242B1DE0A3CE00197D45 /* MED-CARDSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E136A4621DD765ED00D3AC80 /* Build configuration list for PBXNativeTarget "MED-CARDSTests" */;
+			buildConfigurationList = C66424431DE0A3CE00197D45 /* Build configuration list for PBXNativeTarget "MED-CARDSTests" */;
 			buildPhases = (
-				E136A4471DD765EB00D3AC80 /* Sources */,
-				E136A4481DD765EB00D3AC80 /* Frameworks */,
-				E136A4491DD765EB00D3AC80 /* Resources */,
+				C66424281DE0A3CE00197D45 /* Sources */,
+				C66424291DE0A3CE00197D45 /* Frameworks */,
+				C664242A1DE0A3CE00197D45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E136A44D1DD765EB00D3AC80 /* PBXTargetDependency */,
+				C664242E1DE0A3CE00197D45 /* PBXTargetDependency */,
 			);
 			name = "MED-CARDSTests";
 			productName = "MED-CARDSTests";
-			productReference = E136A44B1DD765EB00D3AC80 /* MED-CARDSTests.xctest */;
+			productReference = C664242C1DE0A3CE00197D45 /* MED-CARDSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E136A4551DD765EB00D3AC80 /* MED-CARDSUITests */ = {
+		C66424361DE0A3CE00197D45 /* MED-CARDSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E136A4651DD765ED00D3AC80 /* Build configuration list for PBXNativeTarget "MED-CARDSUITests" */;
+			buildConfigurationList = C66424461DE0A3CE00197D45 /* Build configuration list for PBXNativeTarget "MED-CARDSUITests" */;
 			buildPhases = (
-				E136A4521DD765EB00D3AC80 /* Sources */,
-				E136A4531DD765EB00D3AC80 /* Frameworks */,
-				E136A4541DD765EB00D3AC80 /* Resources */,
+				C66424331DE0A3CE00197D45 /* Sources */,
+				C66424341DE0A3CE00197D45 /* Frameworks */,
+				C66424351DE0A3CE00197D45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E136A4581DD765EB00D3AC80 /* PBXTargetDependency */,
+				C66424391DE0A3CE00197D45 /* PBXTargetDependency */,
 			);
 			name = "MED-CARDSUITests";
 			productName = "MED-CARDSUITests";
-			productReference = E136A4561DD765EB00D3AC80 /* MED-CARDSUITests.xctest */;
+			productReference = C66424371DE0A3CE00197D45 /* MED-CARDSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E136A42C1DD765E900D3AC80 /* Project object */ = {
+		C664240D1DE0A3CE00197D45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Dr. Siegbert Stracke";
+				ORGANIZATIONNAME = Sanexio;
 				TargetAttributes = {
-					E136A4331DD765E900D3AC80 = {
+					C66424141DE0A3CE00197D45 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZR7MEKJXLB;
 						ProvisioningStyle = Automatic;
 					};
-					E136A44A1DD765EB00D3AC80 = {
+					C664242B1DE0A3CE00197D45 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZR7MEKJXLB;
 						ProvisioningStyle = Automatic;
-						TestTargetID = E136A4331DD765E900D3AC80;
+						TestTargetID = C66424141DE0A3CE00197D45;
 					};
-					E136A4551DD765EB00D3AC80 = {
+					C66424361DE0A3CE00197D45 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZR7MEKJXLB;
 						ProvisioningStyle = Automatic;
-						TestTargetID = E136A4331DD765E900D3AC80;
+						TestTargetID = C66424141DE0A3CE00197D45;
 					};
 				};
 			};
-			buildConfigurationList = E136A42F1DD765E900D3AC80 /* Build configuration list for PBXProject "MED-CARDS" */;
+			buildConfigurationList = C66424101DE0A3CE00197D45 /* Build configuration list for PBXProject "MED-CARDS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,37 +238,37 @@
 				en,
 				Base,
 			);
-			mainGroup = E136A42B1DD765E900D3AC80;
-			productRefGroup = E136A4351DD765E900D3AC80 /* Products */;
+			mainGroup = C664240C1DE0A3CE00197D45;
+			productRefGroup = C66424161DE0A3CE00197D45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E136A4331DD765E900D3AC80 /* MED-CARDS */,
-				E136A44A1DD765EB00D3AC80 /* MED-CARDSTests */,
-				E136A4551DD765EB00D3AC80 /* MED-CARDSUITests */,
+				C66424141DE0A3CE00197D45 /* MED-CARDS */,
+				C664242B1DE0A3CE00197D45 /* MED-CARDSTests */,
+				C66424361DE0A3CE00197D45 /* MED-CARDSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E136A4321DD765E900D3AC80 /* Resources */ = {
+		C66424131DE0A3CE00197D45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E136A4451DD765EA00D3AC80 /* LaunchScreen.storyboard in Resources */,
-				E136A4421DD765EA00D3AC80 /* Assets.xcassets in Resources */,
-				E136A43D1DD765EA00D3AC80 /* Main.storyboard in Resources */,
+				C66424261DE0A3CE00197D45 /* LaunchScreen.storyboard in Resources */,
+				C66424231DE0A3CE00197D45 /* Assets.xcassets in Resources */,
+				C664241E1DE0A3CE00197D45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E136A4491DD765EB00D3AC80 /* Resources */ = {
+		C664242A1DE0A3CE00197D45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E136A4541DD765EB00D3AC80 /* Resources */ = {
+		C66424351DE0A3CE00197D45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,60 +278,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E136A4301DD765E900D3AC80 /* Sources */ = {
+		C66424111DE0A3CE00197D45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E136A43A1DD765EA00D3AC80 /* ViewController.swift in Sources */,
-				E136A4381DD765E900D3AC80 /* AppDelegate.swift in Sources */,
-				E136A4401DD765EA00D3AC80 /* MED_CARDS.xcdatamodeld in Sources */,
+				C664244F1DE0A6E800197D45 /* MedcardsModel.swift in Sources */,
+				C664241B1DE0A3CE00197D45 /* ViewController.swift in Sources */,
+				C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */,
+				C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */,
+				C66424211DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld in Sources */,
+				C664244B1DE0A64F00197D45 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E136A4471DD765EB00D3AC80 /* Sources */ = {
+		C66424281DE0A3CE00197D45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E136A4501DD765EB00D3AC80 /* MED_CARDSTests.swift in Sources */,
+				C66424311DE0A3CE00197D45 /* MED_CARDSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E136A4521DD765EB00D3AC80 /* Sources */ = {
+		C66424331DE0A3CE00197D45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E136A45B1DD765EC00D3AC80 /* MED_CARDSUITests.swift in Sources */,
+				C664243C1DE0A3CE00197D45 /* MED_CARDSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E136A44D1DD765EB00D3AC80 /* PBXTargetDependency */ = {
+		C664242E1DE0A3CE00197D45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E136A4331DD765E900D3AC80 /* MED-CARDS */;
-			targetProxy = E136A44C1DD765EB00D3AC80 /* PBXContainerItemProxy */;
+			target = C66424141DE0A3CE00197D45 /* MED-CARDS */;
+			targetProxy = C664242D1DE0A3CE00197D45 /* PBXContainerItemProxy */;
 		};
-		E136A4581DD765EB00D3AC80 /* PBXTargetDependency */ = {
+		C66424391DE0A3CE00197D45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E136A4331DD765E900D3AC80 /* MED-CARDS */;
-			targetProxy = E136A4571DD765EB00D3AC80 /* PBXContainerItemProxy */;
+			target = C66424141DE0A3CE00197D45 /* MED-CARDS */;
+			targetProxy = C66424381DE0A3CE00197D45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E136A43B1DD765EA00D3AC80 /* Main.storyboard */ = {
+		C664241C1DE0A3CE00197D45 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E136A43C1DD765EA00D3AC80 /* Base */,
+				C664241D1DE0A3CE00197D45 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E136A4431DD765EA00D3AC80 /* LaunchScreen.storyboard */ = {
+		C66424241DE0A3CE00197D45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E136A4441DD765EA00D3AC80 /* Base */,
+				C66424251DE0A3CE00197D45 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -322,7 +342,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E136A45D1DD765ED00D3AC80 /* Debug */ = {
+		C664243E1DE0A3CE00197D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -368,11 +388,10 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E136A45E1DD765ED00D3AC80 /* Release */ = {
+		C664243F1DE0A3CE00197D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -410,40 +429,37 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E136A4601DD765ED00D3AC80 /* Debug */ = {
+		C66424411DE0A3CE00197D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZR7MEKJXLB;
 				INFOPLIST_FILE = "MED-CARDS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sanexio.MED-CARDS";
+				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		E136A4611DD765ED00D3AC80 /* Release */ = {
+		C66424421DE0A3CE00197D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZR7MEKJXLB;
 				INFOPLIST_FILE = "MED-CARDS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sanexio.MED-CARDS";
+				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		E136A4631DD765ED00D3AC80 /* Debug */ = {
+		C66424441DE0A3CE00197D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -451,14 +467,14 @@
 				DEVELOPMENT_TEAM = ZR7MEKJXLB;
 				INFOPLIST_FILE = "MED-CARDSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sanexio.MED-CARDSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MED-CARDS.app/MED-CARDS";
 			};
 			name = Debug;
 		};
-		E136A4641DD765ED00D3AC80 /* Release */ = {
+		C66424451DE0A3CE00197D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -466,35 +482,35 @@
 				DEVELOPMENT_TEAM = ZR7MEKJXLB;
 				INFOPLIST_FILE = "MED-CARDSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sanexio.MED-CARDSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MED-CARDS.app/MED-CARDS";
 			};
 			name = Release;
 		};
-		E136A4661DD765ED00D3AC80 /* Debug */ = {
+		C66424471DE0A3CE00197D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZR7MEKJXLB;
 				INFOPLIST_FILE = "MED-CARDSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sanexio.MED-CARDSUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "MED-CARDS";
 			};
 			name = Debug;
 		};
-		E136A4671DD765ED00D3AC80 /* Release */ = {
+		C66424481DE0A3CE00197D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = ZR7MEKJXLB;
 				INFOPLIST_FILE = "MED-CARDSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Sanexio.MED-CARDSUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "MED-CARDS";
@@ -504,53 +520,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E136A42F1DD765E900D3AC80 /* Build configuration list for PBXProject "MED-CARDS" */ = {
+		C66424101DE0A3CE00197D45 /* Build configuration list for PBXProject "MED-CARDS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E136A45D1DD765ED00D3AC80 /* Debug */,
-				E136A45E1DD765ED00D3AC80 /* Release */,
+				C664243E1DE0A3CE00197D45 /* Debug */,
+				C664243F1DE0A3CE00197D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E136A45F1DD765ED00D3AC80 /* Build configuration list for PBXNativeTarget "MED-CARDS" */ = {
+		C66424401DE0A3CE00197D45 /* Build configuration list for PBXNativeTarget "MED-CARDS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E136A4601DD765ED00D3AC80 /* Debug */,
-				E136A4611DD765ED00D3AC80 /* Release */,
+				C66424411DE0A3CE00197D45 /* Debug */,
+				C66424421DE0A3CE00197D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E136A4621DD765ED00D3AC80 /* Build configuration list for PBXNativeTarget "MED-CARDSTests" */ = {
+		C66424431DE0A3CE00197D45 /* Build configuration list for PBXNativeTarget "MED-CARDSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E136A4631DD765ED00D3AC80 /* Debug */,
-				E136A4641DD765ED00D3AC80 /* Release */,
+				C66424441DE0A3CE00197D45 /* Debug */,
+				C66424451DE0A3CE00197D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		E136A4651DD765ED00D3AC80 /* Build configuration list for PBXNativeTarget "MED-CARDSUITests" */ = {
+		C66424461DE0A3CE00197D45 /* Build configuration list for PBXNativeTarget "MED-CARDSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E136A4661DD765ED00D3AC80 /* Debug */,
-				E136A4671DD765ED00D3AC80 /* Release */,
+				C66424471DE0A3CE00197D45 /* Debug */,
+				C66424481DE0A3CE00197D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E136A43E1DD765EA00D3AC80 /* MED_CARDS.xcdatamodeld */ = {
+		C664241F1DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E136A43F1DD765EA00D3AC80 /* MED_CARDS.xcdatamodel */,
+				C66424201DE0A3CE00197D45 /* MED_CARDS.xcdatamodel */,
 			);
-			currentVersion = E136A43F1DD765EA00D3AC80 /* MED_CARDS.xcdatamodel */;
+			currentVersion = C66424201DE0A3CE00197D45 /* MED_CARDS.xcdatamodel */;
 			path = MED_CARDS.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = E136A42C1DD765E900D3AC80 /* Project object */;
+	rootObject = C664240D1DE0A3CE00197D45 /* Project object */;
 }

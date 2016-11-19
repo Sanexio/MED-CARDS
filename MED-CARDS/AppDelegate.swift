@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MED-CARDS
 //
-//  Created by CptX on 12.11.16.
-//  Copyright © 2016 Dr. Siegbert Stracke. All rights reserved.
+//  Created by SSMD on 19.11.16.
+//  Copyright © 2016 Sanexio. All rights reserved.
 //
 
 import UIKit
@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        medcardsModel.logModel()
+        // loggt beim Start der App die Beispieldaten auf der Konsole
+        
         return true
     }
 
