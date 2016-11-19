@@ -18,6 +18,7 @@
 		C664244B1DE0A64F00197D45 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244A1DE0A64F00197D45 /* Card.swift */; };
 		C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244C1DE0A6BD00197D45 /* Deck.swift */; };
 		C664244F1DE0A6E800197D45 /* MedcardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244E1DE0A6E800197D45 /* MedcardsModel.swift */; };
+		C66424511DE0E46B00197D45 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66424501DE0E46B00197D45 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C664244A1DE0A64F00197D45 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C664244C1DE0A6BD00197D45 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		C664244E1DE0A6E800197D45 /* MedcardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedcardsModel.swift; sourceTree = "<group>"; };
+		C66424501DE0E46B00197D45 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				C664244A1DE0A64F00197D45 /* Card.swift */,
 				C664244C1DE0A6BD00197D45 /* Deck.swift */,
 				C664244E1DE0A6E800197D45 /* MedcardsModel.swift */,
+				C66424501DE0E46B00197D45 /* CardViewController.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C664244F1DE0A6E800197D45 /* MedcardsModel.swift in Sources */,
+				C66424511DE0E46B00197D45 /* CardViewController.swift in Sources */,
 				C664241B1DE0A3CE00197D45 /* ViewController.swift in Sources */,
 				C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */,
 				C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */,

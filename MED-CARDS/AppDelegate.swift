@@ -16,9 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
         medcardsModel.logModel()
         // loggt beim Start der App die Beispieldaten auf der Konsole
+        
+        window?.rootViewController = CardViewController()
+        // CardViewController als rootViewController für das UIWindow
+        
+        // Hinweis: Meist wird das View für einen UIViewController 
+        // graphisch über das Storyboard konfiguriert. 
+        // Durch die Verwendung der UIWindow.rootViewController-Eigenschaft 
+        // wird der Standard-Storyboardmechanismus überschrieben. 
+        // Dies dient vor allem zur Veranschaulichung von UIView und UIViewController
         
         return true
     }
