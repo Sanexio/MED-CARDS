@@ -18,6 +18,7 @@
 		C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244C1DE0A6BD00197D45 /* Deck.swift */; };
 		C664244F1DE0A6E800197D45 /* MedcardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664244E1DE0A6E800197D45 /* MedcardsModel.swift */; };
 		C66424511DE0E46B00197D45 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66424501DE0E46B00197D45 /* CardViewController.swift */; };
+		C6D21A6B1DE648B80075D68A /* AddDecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D21A6A1DE648B80075D68A /* AddDecksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C664244C1DE0A6BD00197D45 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		C664244E1DE0A6E800197D45 /* MedcardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedcardsModel.swift; sourceTree = "<group>"; };
 		C66424501DE0E46B00197D45 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		C6D21A6A1DE648B80075D68A /* AddDecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDecksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C66424501DE0E46B00197D45 /* CardViewController.swift */,
+				C6D21A6A1DE648B80075D68A /* AddDecksTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */,
 				C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */,
 				C66424211DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld in Sources */,
+				C6D21A6B1DE648B80075D68A /* AddDecksTableViewController.swift in Sources */,
 				C664244B1DE0A64F00197D45 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
