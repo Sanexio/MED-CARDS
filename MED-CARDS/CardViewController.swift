@@ -10,13 +10,49 @@ import UIKit
 
 class CardViewController: UIViewController {
     
+    @IBOutlet weak var textView: UITextView!
+    
     @IBOutlet weak var btnFlip: UIButton!
     
-    @IBAction func flipRenamed(_ sender: UIButton) {
-        
-        btnFlip.setTitle("Flipped", for: .normal)
+    @IBOutlet weak var btnWrong: UIButton!
+    
+    @IBOutlet weak var btnCorrect: UIButton!
+    
+    private var flipped = false {
+        didSet {
+            updateView()
+        }
     }
-    // Methode flipRenamed verändert den Text des Buttons
+    
+    
+    
+    @IBAction func flip(_ sender: UIButton) {
+        
+        // btnFlip.setTitle("Flipped", for: .normal)
+        
+        self.flipped = !self.flipped
+        
+    }
+    // Methode flip verändert den Text des Buttons
+    
+    private func updateView() {
+        updateViewText()
+        updateViewButtons()
+    }
+    
+    private func updateViewText() {
+        if flipped {
+            textView.text = "Rückseite"
+        } else {
+            textView.text = "Vorderseite"
+        }
+    }
+    
+    private func updateViewButtons() {
+        btnWrong.isHidden = !flipped
+        btnFlip.isHidden = flipped
+        btnCorrect.isHidden = !flipped
+    }
     
 
 /*    override func loadView() {
@@ -42,6 +78,11 @@ class CardViewController: UIViewController {
     }
     // das View wird nicht mehr programmatisch erzeugt, sondern aus dem Storyboard geladen 
 */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateView()
+    }
     
 
     override func didReceiveMemoryWarning() {

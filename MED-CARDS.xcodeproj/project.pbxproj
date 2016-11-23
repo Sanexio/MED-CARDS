@@ -105,6 +105,7 @@
 		C66424171DE0A3CE00197D45 /* MED-CARDS */ = {
 			isa = PBXGroup;
 			children = (
+				C6D21A671DE628060075D68A /* Controller */,
 				C66424491DE0A61C00197D45 /* Model */,
 				C66424181DE0A3CE00197D45 /* AppDelegate.swift */,
 				C664241C1DE0A3CE00197D45 /* Main.storyboard */,
@@ -140,9 +141,16 @@
 				C664244A1DE0A64F00197D45 /* Card.swift */,
 				C664244C1DE0A6BD00197D45 /* Deck.swift */,
 				C664244E1DE0A6E800197D45 /* MedcardsModel.swift */,
-				C66424501DE0E46B00197D45 /* CardViewController.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C6D21A671DE628060075D68A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C66424501DE0E46B00197D45 /* CardViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
