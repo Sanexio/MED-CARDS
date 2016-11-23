@@ -26,7 +26,7 @@ class CardViewController: UIViewController {
     
     
     
-    @IBAction func flip(_ sender: UIButton) {
+    @IBAction func flipRenamed(_ sender: UIButton) {
         
         // btnFlip.setTitle("Flipped", for: .normal)
         
