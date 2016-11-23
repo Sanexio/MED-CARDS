@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66424181DE0A3CE00197D45 /* AppDelegate.swift */; };
-		C664241B1DE0A3CE00197D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C664241A1DE0A3CE00197D45 /* ViewController.swift */; };
 		C664241E1DE0A3CE00197D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C664241C1DE0A3CE00197D45 /* Main.storyboard */; };
 		C66424211DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C664241F1DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld */; };
 		C66424231DE0A3CE00197D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66424221DE0A3CE00197D45 /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		C66424151DE0A3CE00197D45 /* MED-CARDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MED-CARDS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66424181DE0A3CE00197D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C664241A1DE0A3CE00197D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C664241D1DE0A3CE00197D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C66424201DE0A3CE00197D45 /* MED_CARDS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MED_CARDS.xcdatamodel; sourceTree = "<group>"; };
 		C66424221DE0A3CE00197D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			children = (
 				C66424491DE0A61C00197D45 /* Model */,
 				C66424181DE0A3CE00197D45 /* AppDelegate.swift */,
-				C664241A1DE0A3CE00197D45 /* ViewController.swift */,
 				C664241C1DE0A3CE00197D45 /* Main.storyboard */,
 				C66424221DE0A3CE00197D45 /* Assets.xcassets */,
 				C66424241DE0A3CE00197D45 /* LaunchScreen.storyboard */,
@@ -287,7 +284,6 @@
 			files = (
 				C664244F1DE0A6E800197D45 /* MedcardsModel.swift in Sources */,
 				C66424511DE0E46B00197D45 /* CardViewController.swift in Sources */,
-				C664241B1DE0A3CE00197D45 /* ViewController.swift in Sources */,
 				C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */,
 				C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */,
 				C66424211DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld in Sources */,

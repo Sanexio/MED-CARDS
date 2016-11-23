@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         medcardsModel.logModel()
         // loggt beim Start der App die Beispieldaten auf der Konsole
         
-        window?.rootViewController = CardViewController()
+        // window?.rootViewController = CardViewController()
         // CardViewController als rootViewController für das UIWindow
+        // wird nun automatisch beim Laden des Storyboards aufgerufen 
         
         // Hinweis: Meist wird das View für einen UIViewController 
         // graphisch über das Storyboard konfiguriert. 

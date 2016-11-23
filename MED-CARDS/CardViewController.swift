@@ -10,10 +10,19 @@ import UIKit
 
 class CardViewController: UIViewController {
     
-    var btnFlip : UIButton!
+    @IBOutlet weak var btnFlip: UIButton!
+    
+    @IBAction func flipRenamed(_ sender: UIButton) {
+        
+        btnFlip.setTitle("Flipped", for: .normal)
+    }
+    // Methode flipRenamed verändert den Text des Buttons
+    
 
-    override func loadView() {
+/*    override func loadView() {
+        
         let view = UIView()
+        
         view.backgroundColor = UIColor.yellow
         
         btnFlip = UIButton(type: .system)
@@ -27,20 +36,12 @@ class CardViewController: UIViewController {
         // zunächst der Einfachheit halber. Später werden AutoLayout-Constraints 
         // verwendet, so dass die Positionierung unabhängig von der Bildschirmgröße wird.
         
-        
-        
-        func flip() {
-            btnFlip.setTitle("Flipped", for: .normal)
-        }
-        // Methode fip verändert den Text des Buttons
-        
-        btnFlip.addTarget(self, action: #selector(getter: btnFlip), for: .touchUpInside)
-        
         // btnFlip.addTarget(self, action: #selector(flip), for: .touchUpInside)
         
         self.view = view
     }
-    
+    // das View wird nicht mehr programmatisch erzeugt, sondern aus dem Storyboard geladen 
+*/
     
 
     override func didReceiveMemoryWarning() {
