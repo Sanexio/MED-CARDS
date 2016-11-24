@@ -25,5 +25,10 @@ class Deck: NSObject {
         return card
     }
     
-
+    var cardsToLearn : [Card] {
+        get {
+            return self.cards
+        }
+    }
+    
 }

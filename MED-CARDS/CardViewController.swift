@@ -24,6 +24,23 @@ class CardViewController: UIViewController {
         }
     }
     
+    var card : Card? {
+        didSet {
+            updateView()
+        }
+    }
+    // Fügen Sie dazu dem CardViewController eine Eigenschaft card hinzu 
+    // und verwenden Sie einen didSet-Block, um die Darstellung zu aktualisieren, 
+    // wenn ein Card-Objekt gesetzt wird
+    
+    var cards : [Card] = [] {
+        didSet {
+            self.card = cards.first
+        }
+    }
+    // Fügen Sie eine weitere Eigenschaft cards hinzu und setzen 
+    // Sie dem Controller die erste Karte, wenn eine Liste von Lernkarten gesetzt wird
+    
     
     
     @IBAction func flipRenamed(_ sender: UIButton) {
@@ -36,16 +53,41 @@ class CardViewController: UIViewController {
     // Methode flip verändert den Text des Buttons
     
     private func updateView() {
-        updateViewText()
-        updateViewButtons()
+        
+        if isViewLoaded {
+            updateViewText()
+            updateViewButtons()
+        }
+        // Modelleigenschaften können auch vor dem Laden des Views gesetzt werden. 
+        // Mit der UIViewController-Methode isViewLoaded wird geprüft, ob das View bereits geladen wurde
+        
+        
+        /* Alternativ kann das Swift-Statement "guard" verwendet werden,
+         mit dem eine Vorbedingung für nachfolgenden Code geprüft werden kann
+         - der Compiler erzwingt, dass der nachfolgende Code nicht ausgeführt wird,
+         wenn die Bedingung nicht gegeben ist 
+         (ohne das return im else-Block würde der Code nicht compilieren):
+         
+         guard isViewLoaded else {
+         return
+         }
+         */
     }
     
     private func updateViewText() {
+        
+        textView.text = flipped ? card?.backText : card?.frontText
+        
+        /*
+        Sttt bisher mit einem if-Statement wird die Zuweisung des Textes 
+        im Beispiel oben mit einem konditionalen Ausdruck verkürzt geschrieben.
+ 
         if flipped {
             textView.text = "Rückseite"
         } else {
             textView.text = "Vorderseite"
         }
+        */
     }
     
     private func updateViewButtons() {
