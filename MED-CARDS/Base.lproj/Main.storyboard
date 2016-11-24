@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NG9-X4-ncq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eay-tp-V42">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Decks Table View Controller-->
+        <!--MedCards-->
         <scene sceneID="BNI-sY-L3i">
             <objects>
                 <tableViewController id="NG9-X4-ncq" customClass="DecksTableViewController" customModule="MED_CARDS" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,6 +34,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="jeG-SC-h3R" kind="show" id="OCn-KJ-diq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -41,15 +44,22 @@
                             <outlet property="delegate" destination="NG9-X4-ncq" id="neP-3U-uO6"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="MedCards" id="0da-8a-5H9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LdH-3e-GKD">
+                            <connections>
+                                <segue destination="dyq-GJ-Rtg" kind="show" id="Lbh-H9-poU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gq-7x-Cbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-759" y="73"/>
+            <point key="canvasLocation" x="96" y="73"/>
         </scene>
-        <!--Add Decks Table View Controller-->
+        <!--Neu-->
         <scene sceneID="zQF-1c-7vM">
             <objects>
-                <tableViewController id="dyq-GJ-Rtg" customClass="AddDecksTableViewController" customModule="MED_CARDS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Neu" id="dyq-GJ-Rtg" customClass="AddDecksTableViewController" customModule="MED_CARDS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="msZ-Ao-I8c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,12 +112,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="neI-ub-yAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90" y="73"/>
+            <point key="canvasLocation" x="909" y="-248"/>
         </scene>
-        <!--Card View Controller-->
+        <!--Lernkarte-->
         <scene sceneID="OaD-IJ-sp3">
             <objects>
-                <viewController id="jeG-SC-h3R" customClass="CardViewController" customModule="MED_CARDS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lernkarte" id="jeG-SC-h3R" customClass="CardViewController" customModule="MED_CARDS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kXU-fZ-r79"/>
                         <viewControllerLayoutGuide type="bottom" id="Rd0-qp-OKA"/>
@@ -116,8 +126,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YiH-4t-lhM">
+                                <rect key="frame" x="20" y="103" width="374" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-34-ee0">
-                                <rect key="frame" x="173" y="334" width="68" height="68"/>
+                                <rect key="frame" x="173" y="422" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_flip"/>
@@ -126,7 +144,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLu-Bd-kbd">
-                                <rect key="frame" x="249" y="334" width="68" height="68"/>
+                                <rect key="frame" x="249" y="422" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_correct"/>
@@ -135,7 +153,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-IS-mNl">
-                                <rect key="frame" x="97" y="334" width="68" height="68"/>
+                                <rect key="frame" x="97" y="422" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_wrong"/>
@@ -143,14 +161,6 @@
                                     <action selector="flipRenamed:" destination="jeG-SC-h3R" eventType="touchUpInside" id="3IM-oB-Yd2"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YiH-4t-lhM">
-                                <rect key="frame" x="20" y="20" width="374" height="273"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94117647058823528" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -163,7 +173,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTq-TQ-dJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="73"/>
+            <point key="canvasLocation" x="909" y="420"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bdH-5D-nWU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eay-tp-V42" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gld-mK-axA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NG9-X4-ncq" kind="relationship" relationship="rootViewController" id="YMt-5c-pYQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irE-du-HXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-597" y="73"/>
         </scene>
     </scenes>
     <resources>
