@@ -9,20 +9,15 @@
 import UIKit
 
 class DecksTableViewController: UITableViewController {
+    
+    let decks = medcardsModel.decks
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -34,14 +29,20 @@ class DecksTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1000
+        // return 1000
+        
+        return decks.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DeckCell", for: indexPath)
 
-        cell.textLabel?.text = "Zelle \(indexPath.section).\(indexPath.row)"
+        // cell.textLabel?.text = "Zelle \(indexPath.section).\(indexPath.row)"
+        
+        let deck = decks[indexPath.row]
+        
+        cell.textLabel?.text = deck.name
         
         if indexPath.row > 0 && indexPath.row % 50 == 0 {
             cell.backgroundColor = UIColor.init(red: 8.0/255.0, green: 159.0/255.0, blue: 215.0/255.0, alpha: 1)
