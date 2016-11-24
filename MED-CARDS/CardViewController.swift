@@ -18,6 +18,14 @@ class CardViewController: UIViewController {
     
     @IBOutlet weak var btnCorrect: UIButton!
     
+    @IBAction func wrong(_ sender: Any) {
+        showNextCard()
+    }
+
+    @IBAction func correct(_ sender: Any) {
+        showNextCard()
+    }
+    
     private var flipped = false {
         didSet {
             updateView()
@@ -41,6 +49,16 @@ class CardViewController: UIViewController {
     // Fügen Sie eine weitere Eigenschaft cards hinzu und setzen 
     // Sie dem Controller die erste Karte, wenn eine Liste von Lernkarten gesetzt wird
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateView()
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     
     @IBAction func flipRenamed(_ sender: UIButton) {
@@ -52,11 +70,30 @@ class CardViewController: UIViewController {
     }
     // Methode flip verändert den Text des Buttons
     
+    func showNextCard() {
+        if let card = self.card, let index = cards.index(of:card), cards.indices.contains(index + 1) {
+            // Nächste Lernkarte:
+            self.card = cards[index + 1]
+            self.flipped = false
+        }
+    }
+    // Implementation der Methode showNextCard, die die Position der
+    // aktuellen Lernkarte im Kartenstapel ermittelt und zur nächsten
+    // Lernkarte wechselt, sofern noch Karten verbleiben.
+    
+    private func updateViewNavTitle() {
+        if let card = self.card, let index = cards.index(of:card) {
+            self.navigationItem.title = "\(index + 1) von \(cards.count)"
+        }
+    }
+    // aktuelle Position im Kartenstapel wird als Titel gesetzt.
+    
     private func updateView() {
         
         if isViewLoaded {
             updateViewText()
             updateViewButtons()
+            updateViewNavTitle()
         }
         // Modelleigenschaften können auch vor dem Laden des Views gesetzt werden. 
         // Mit der UIViewController-Methode isViewLoaded wird geprüft, ob das View bereits geladen wurde
@@ -121,19 +158,8 @@ class CardViewController: UIViewController {
     // das View wird nicht mehr programmatisch erzeugt, sondern aus dem Storyboard geladen 
 */
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateView()
-    }
-    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
+/*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -141,6 +167,6 @@ class CardViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+*/
 
 }

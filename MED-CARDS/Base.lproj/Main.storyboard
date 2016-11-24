@@ -149,7 +149,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_correct"/>
                                 <connections>
-                                    <action selector="flipRenamed:" destination="jeG-SC-h3R" eventType="touchUpInside" id="cgu-R4-d5I"/>
+                                    <action selector="correct:" destination="jeG-SC-h3R" eventType="touchUpInside" id="5sa-F5-57h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-IS-mNl">
@@ -158,7 +158,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_wrong"/>
                                 <connections>
-                                    <action selector="flipRenamed:" destination="jeG-SC-h3R" eventType="touchUpInside" id="3IM-oB-Yd2"/>
+                                    <action selector="wrong:" destination="jeG-SC-h3R" eventType="touchUpInside" id="9MP-Tk-mlb"/>
                                 </connections>
                             </button>
                         </subviews>
