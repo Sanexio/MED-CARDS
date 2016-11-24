@@ -45,11 +45,16 @@ class AddDecksTableViewController: UITableViewController {
             medcardsModel.createGastroDeck()
         default:
             return
+        // Abhängig vom ausgewählten Zeilenindex wird der entsprechende Kartenstapel
+        // in das lokale Modell übernommen. Hierzu wird das switch-Statement verwendet.
         }
         medcardsModel.logModel()
+        
+        let _ = self.navigationController?.popViewController(animated:true)
+        // nach dem Anlegen eines neuen Kartenstapels wird zurück zur Startsicht gewechselt, 
+        // indem der Controller vom UINavigationController-Stapel entfernt wird.
     }
-    // Abhängig vom ausgewählten Zeilenindex wird der entsprechende Kartenstapel 
-    // in das lokale Modell übernommen. Hierzu wird ein switch-Statement verwendet.
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

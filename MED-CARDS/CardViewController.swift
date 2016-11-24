@@ -75,6 +75,11 @@ class CardViewController: UIViewController {
             // Nächste Lernkarte:
             self.card = cards[index + 1]
             self.flipped = false
+            
+        } else {
+            // Letzte Lernkarte:
+            // ViewController vom Navigations-Stapel entfernen
+            let _ = self.navigationController?.popViewController(animated:true)
         }
     }
     // Implementation der Methode showNextCard, die die Position der

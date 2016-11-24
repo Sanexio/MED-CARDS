@@ -26,12 +26,15 @@ class MedcardsModel: NSObject {
     // fügt dieses in die Liste des MedcardsModels ein 
     // und liefert das erzeugte Objekt zurück
     
-    
+
     override init() {
         super.init()
         self.createKardioDeck()
         self.createGastroDeck()
     }
+    // Die Kartenstapel können vom Anwender manuell in die Bibliothek hinzugefügt werden !
+    // Die "init-Methode" mit den vorgefertigten Decks wird somit nicht mehr benötigt.
+
     
     
     @discardableResult func createKardioDeck() -> Deck {
