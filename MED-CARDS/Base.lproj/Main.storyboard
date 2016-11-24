@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -126,43 +127,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YiH-4t-lhM">
-                                <rect key="frame" x="20" y="103" width="374" height="273"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="0.92603058510638303" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-34-ee0">
-                                <rect key="frame" x="173" y="422" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-34-ee0">
+                                <rect key="frame" x="173" y="447" width="68" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_flip"/>
                                 <connections>
                                     <action selector="flipRenamed:" destination="jeG-SC-h3R" eventType="touchUpInside" id="qad-ZR-KHi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLu-Bd-kbd">
-                                <rect key="frame" x="249" y="422" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLu-Bd-kbd">
+                                <rect key="frame" x="249" y="447" width="68" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="btn_correct"/>
                                 <connections>
                                     <action selector="correct:" destination="jeG-SC-h3R" eventType="touchUpInside" id="5sa-F5-57h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-IS-mNl">
-                                <rect key="frame" x="97" y="422" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" image="btn_wrong"/>
-                                <connections>
-                                    <action selector="wrong:" destination="jeG-SC-h3R" eventType="touchUpInside" id="9MP-Tk-mlb"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GBx-pV-ZBY">
+                                <rect key="frame" x="97" y="447" width="68" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4G-IS-mNl">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" image="btn_wrong"/>
+                                        <connections>
+                                            <action selector="wrong:" destination="jeG-SC-h3R" eventType="touchUpInside" id="9MP-Tk-mlb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YiH-4t-lhM">
+                                <rect key="frame" x="71" y="123.66666666666669" width="288" height="305"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="0.92603058510638303" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Lce-KL-zQL"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098039215685" green="0.6470588235294118" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YiH-4t-lhM" firstAttribute="centerX" secondItem="B6b-pa-ywz" secondAttribute="centerX" constant="8" id="4Kh-a7-oNV"/>
+                            <constraint firstItem="WLu-Bd-kbd" firstAttribute="centerY" secondItem="GBx-pV-ZBY" secondAttribute="centerY" id="76H-xj-SU5"/>
+                            <constraint firstItem="Rd0-qp-OKA" firstAttribute="top" secondItem="cWC-34-ee0" secondAttribute="bottom" constant="60" id="KTJ-6z-w25"/>
+                            <constraint firstItem="cWC-34-ee0" firstAttribute="centerY" secondItem="GBx-pV-ZBY" secondAttribute="centerY" id="Paj-lJ-7hl"/>
+                            <constraint firstItem="YiH-4t-lhM" firstAttribute="height" secondItem="B6b-pa-ywz" secondAttribute="height" multiplier="1:3" constant="59.666666666666686" id="PwE-2a-VOQ"/>
+                            <constraint firstItem="cWC-34-ee0" firstAttribute="leading" secondItem="GBx-pV-ZBY" secondAttribute="trailing" constant="20" id="SUY-Wa-FOe"/>
+                            <constraint firstItem="cWC-34-ee0" firstAttribute="centerX" secondItem="B6b-pa-ywz" secondAttribute="centerX" id="gRB-gz-qbb"/>
+                            <constraint firstItem="WLu-Bd-kbd" firstAttribute="leading" secondItem="cWC-34-ee0" secondAttribute="trailing" constant="20" id="rlj-HO-mbs"/>
+                            <constraint firstItem="YiH-4t-lhM" firstAttribute="centerY" secondItem="B6b-pa-ywz" secondAttribute="centerY" multiplier="3:4" id="uiy-6r-XVQ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnCorrect" destination="WLu-Bd-kbd" id="eW2-kt-q1S"/>
