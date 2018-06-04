@@ -20,6 +20,11 @@
 		C66424511DE0E46B00197D45 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66424501DE0E46B00197D45 /* CardViewController.swift */; };
 		C6D21A6B1DE648B80075D68A /* AddDecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D21A6A1DE648B80075D68A /* AddDecksTableViewController.swift */; };
 		C6D21A6F1DE6DC7F0075D68A /* DecksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D21A6E1DE6DC7F0075D68A /* DecksTableViewController.swift */; };
+		C6D21A741DE742830075D68A /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D21A701DE742830075D68A /* 1.json */; };
+		C6D21A751DE742830075D68A /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D21A711DE742830075D68A /* 2.json */; };
+		C6D21A761DE742830075D68A /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D21A721DE742830075D68A /* 3.json */; };
+		C6D21A771DE742830075D68A /* sets.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D21A731DE742830075D68A /* sets.json */; };
+		C6D21A791DE743E60075D68A /* DeckLibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D21A781DE743E60075D68A /* DeckLibraryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		C66424501DE0E46B00197D45 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		C6D21A6A1DE648B80075D68A /* AddDecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDecksTableViewController.swift; sourceTree = "<group>"; };
 		C6D21A6E1DE6DC7F0075D68A /* DecksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecksTableViewController.swift; sourceTree = "<group>"; };
+		C6D21A701DE742830075D68A /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		C6D21A711DE742830075D68A /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		C6D21A721DE742830075D68A /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		C6D21A731DE742830075D68A /* sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sets.json; sourceTree = "<group>"; };
+		C6D21A781DE743E60075D68A /* DeckLibraryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckLibraryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +155,10 @@
 				C664244A1DE0A64F00197D45 /* Card.swift */,
 				C664244C1DE0A6BD00197D45 /* Deck.swift */,
 				C664244E1DE0A6E800197D45 /* MedcardsModel.swift */,
+				C6D21A701DE742830075D68A /* 1.json */,
+				C6D21A711DE742830075D68A /* 2.json */,
+				C6D21A721DE742830075D68A /* 3.json */,
+				C6D21A731DE742830075D68A /* sets.json */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 				C66424501DE0E46B00197D45 /* CardViewController.swift */,
 				C6D21A6A1DE648B80075D68A /* AddDecksTableViewController.swift */,
 				C6D21A6E1DE6DC7F0075D68A /* DecksTableViewController.swift */,
+				C6D21A781DE743E60075D68A /* DeckLibraryTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -222,23 +237,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Sanexio;
 				TargetAttributes = {
 					C66424141DE0A3CE00197D45 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZR7MEKJXLB;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C664242B1DE0A3CE00197D45 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZR7MEKJXLB;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C66424141DE0A3CE00197D45;
 					};
 					C66424361DE0A3CE00197D45 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZR7MEKJXLB;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C66424141DE0A3CE00197D45;
 					};
@@ -269,9 +287,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D21A751DE742830075D68A /* 2.json in Resources */,
 				C66424261DE0A3CE00197D45 /* LaunchScreen.storyboard in Resources */,
 				C66424231DE0A3CE00197D45 /* Assets.xcassets in Resources */,
+				C6D21A761DE742830075D68A /* 3.json in Resources */,
 				C664241E1DE0A3CE00197D45 /* Main.storyboard in Resources */,
+				C6D21A771DE742830075D68A /* sets.json in Resources */,
+				C6D21A741DE742830075D68A /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +322,7 @@
 				C66424511DE0E46B00197D45 /* CardViewController.swift in Sources */,
 				C6D21A6F1DE6DC7F0075D68A /* DecksTableViewController.swift in Sources */,
 				C66424191DE0A3CE00197D45 /* AppDelegate.swift in Sources */,
+				C6D21A791DE743E60075D68A /* DeckLibraryTableViewController.swift in Sources */,
 				C664244D1DE0A6BD00197D45 /* Deck.swift in Sources */,
 				C66424211DE0A3CE00197D45 /* MED_CARDS.xcdatamodeld in Sources */,
 				C6D21A6B1DE648B80075D68A /* AddDecksTableViewController.swift in Sources */,
@@ -367,7 +390,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -375,7 +400,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -416,7 +446,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -424,7 +456,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -458,7 +495,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -471,7 +509,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -485,7 +524,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MED-CARDS.app/MED-CARDS";
 			};
 			name = Debug;
@@ -500,7 +540,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MED-CARDS.app/MED-CARDS";
 			};
 			name = Release;
@@ -514,7 +555,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "MED-CARDS";
 			};
 			name = Debug;
@@ -528,7 +570,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "comSanexio.MED-CARDSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "MED-CARDS";
 			};
 			name = Release;

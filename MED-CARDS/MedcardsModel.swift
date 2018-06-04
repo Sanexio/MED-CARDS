@@ -22,7 +22,7 @@ class MedcardsModel: NSObject {
         self.decks.append(deck)
         return deck
     }
-    // erstellt ein neues Deck mit dem übergebenen Namen
+    // erstellt ein neues Deck mit dem übergebenen Namen,
     // fügt dieses in die Liste des MedcardsModels ein 
     // und liefert das erzeugte Objekt zurück
     
@@ -68,4 +68,5 @@ class MedcardsModel: NSObject {
 }
 
 let medcardsModel = MedcardsModel()
+// außerhalb der Klasse und somit anwendungsweit verfügbare Instanz
 
